@@ -8,7 +8,7 @@ import {
   Navigation,
   SectionDivider,
   StatsSection,
-} from "./_components/luxury-sections.tsx";
+} from "./_components/luxury-sections";
 
 export default function Home() {
   return (
