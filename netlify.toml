@@ -32,6 +32,10 @@ functionsDirectory = ".netlify/functions"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
+# Prebuild step to install correct lightningcss binary
+[build.prebuild]
+  command = "npm install -g lightningcss-linux-x64-gnu"
+
 # Next.js build environment settings
 [build.environment]
   NPM_FLAGS = "--no-optional"
