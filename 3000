@@ -106,3 +106,12 @@ https://react.dev/link/hydration-mismatch
  GET /journal 200 in 37ms (next.js: 4ms, application-code: 32ms)
  GET /journal 200 in 161ms (next.js: 10ms, application-code: 152ms)
 ✓ Compiled in 61ms
+✓ Compiled in 71ms
+ GET /properties 200 in 46ms (next.js: 2ms, application-code: 44ms)
+ GET /journal 200 in 37ms (next.js: 2ms, application-code: 34ms)
+ GET /about 200 in 36ms (next.js: 2ms, application-code: 34ms)
+ GET / 200 in 35ms (next.js: 3ms, application-code: 33ms)
+[browser] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly. (<anonymous>)
+ GET /journal 200 in 29ms (next.js: 1872µs, application-code: 27ms)
+ GET /contact 200 in 26ms (next.js: 2ms, application-code: 23ms)
+ GET /journal 200 in 30ms (next.js: 1774µs, application-code: 28ms)

@@ -351,7 +351,7 @@ export function HeroSection() {
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-medium tracking-editorial text-white leading-[1.05]">
               A curated collection of residences where architecture meets artistry.
             </h1>
-            <p className="font-sans-custom text-[15px] md:text-[16px] font-light text-white/80 leading-relaxed mt-8 max-w-2xl">
+            <p className="font-sans-custom text-[15px] md:text-[16px] font-light text-[#D4AF37] leading-relaxed mt-8 max-w-2xl">
               Discover spaces shaped by light, material, and landscape — selected for the way they transform daily life.
             </p>
           </AnimatedSection>
