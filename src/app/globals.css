@@ -1,9 +1,13 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
+/* Custom variants and theme configuration removed for Tailwind v4 compatibility */
+/* Custom variables for Tailwind v4 */
 
-@theme inline {
+:root {
+  --radius: 0.625rem;
+  --background: #FFFFFF;
+  --foreground: #1A1A1A;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans);
@@ -19,12 +23,6 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-}
-
-:root {
-  --radius: 0.625rem;
-  --background: #FFFFFF;
-  --foreground: #1A1A1A;
 }
 
 @layer base {
@@ -123,16 +121,16 @@ html {
 }
 
 .animate-fade-in-up {
-  animation: fadeInUp 1s ease-out forwards;
-}
-
-.animate-fade-in {
-  animation: fadeIn 1.2s ease-out forwards;
-}
-
-.animate-slide-down {
-  animation: slideDown 0.8s ease-out forwards;
-}
+   animation: fadeInUp 1s ease-out forwards;
+ }
+ 
+ .animate-fade-in {
+   animation: fadeIn 1.2s ease-out forwards;
+ }
+ 
+ .animate-slide-down {
+   animation: slideDown 0.8s ease-out forwards;
+ }
 
 /* Gold line accent */
 .gold-line {

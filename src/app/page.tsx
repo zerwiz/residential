@@ -8,7 +8,7 @@ import {
   useInView,
   AnimatePresence,
 } from "framer-motion";
-import { Search, MapPin, ArrowRight, ChevronDown, Menu, X } from "lucide-react";
+import { Search, MapPin, ArrowRight, ChevronDown } from "lucide-react";
 
 /* ──────────────────────────────────────────────
    Navigation
@@ -121,14 +121,131 @@ function Navigation() {
                   {link.label}
                 </motion.a>
               ))}
-              <div className="gold-line" />
-              <div className="relative w-full h-screen overflow-hidden bg-white pt-24">
-      {/* White border framing - Gallery effect */}
-      <div className="absolute inset-0 z-10 pointer-events-none">
-        <div className="w-full h-full border-x border-charcoal/10 max-w-[92%] mx-auto" />
-      </div>
+              <a
+                href="#contact"
+                onClick={() => setMobileMenuOpen(false)}
+                className="font-sans-custom text-[15px] font-light tracking-wide-editorial text-gold hover:text-[#C4A030] transition-colors uppercase"
+              >
+                Inquire
+              </a>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </motion.header>
+  );
+}
 
+function AnimatedSection({
+  children,
+  className,
+  delay = 0,
+}: {
+  children: React.ReactNode;
+  className?: string;
+  delay?: number;
+}) {
+  const ref = useRef<HTMLDivElement | null>(null);
+  const inView = useInView(ref, { once: true, margin: "-80px" });
+
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 18 }}
+      animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 18 }}
+      transition={{ duration: 0.9, ease: "easeOut", delay }}
+      className={className}
+    >
+      {children}
+    </motion.div>
+  );
+}
+
+function SectionDivider() {
+  return (
+    <div className="py-10 md:py-14">
+      <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
+        <div className="h-px bg-[#E5E5E5]/70" />
+      </div>
+    </div>
+  );
+}
+
+function HeroSection() {
+  const sectionRef = useRef<HTMLElement | null>(null);
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start start", "end start"],
+  });
+
+  const imageY = useTransform(scrollYProgress, [0, 1], [0, 120]);
+  const imageScale = useTransform(scrollYProgress, [0, 1], [1.02, 1.08]);
+
+  return (
+    <section ref={sectionRef} className="relative min-h-[92vh] overflow-hidden">
       {/* Parallax Image */}
+      <motion.div
+        style={{ y: imageY, scale: imageScale }}
+        className="absolute inset-0"
+      >
+        <img
+          src="/property-2.jpg"
+          alt="Curated residence"
+          className="w-full h-full object-cover"
+        />
+      </motion.div>
+
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-black/15 to-white/95" />
+
+      {/* Content */}
+      <div className="relative z-10">
+        <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 pt-32 md:pt-40 lg:pt-44 pb-20">
+          <AnimatedSection className="max-w-3xl">
+            <p className="font-sans-custom text-[11px] font-light tracking-wide-editorial uppercase text-[#E8D48B] mb-6">
+              Exceptional Properties Worldwide
+            </p>
+            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-medium tracking-editorial text-white leading-[1.05]">
+              A curated collection of residences where architecture meets
+              artistry.
+            </h1>
+            <p className="font-sans-custom text-[15px] md:text-[16px] font-light text-white/85 leading-relaxed mt-8 max-w-2xl">
+              Discover spaces shaped by light, material, and landscape — selected
+              for the way they transform daily life.
+            </p>
+          </AnimatedSection>
+
+          <AnimatedSection delay={0.15} className="mt-14 md:mt-16">
+            <div className="bg-white/92 backdrop-blur-sm border border-white/60 max-w-3xl">
+              <div className="grid grid-cols-1 md:grid-cols-3">
+                <div className="flex items-center gap-3 px-5 py-4 border-b md:border-b-0 md:border-r border-[#E5E5E5]/70">
+                  <MapPin className="w-4 h-4 text-[#D4AF37]" />
+                  <input
+                    placeholder="Location"
+                    className="w-full bg-transparent outline-none font-sans-custom text-[13px] font-light text-[#1A1A1A] placeholder:text-[#999999]"
+                  />
+                </div>
+                <div className="flex items-center gap-3 px-5 py-4 border-b md:border-b-0 md:border-r border-[#E5E5E5]/70">
+                  <ChevronDown className="w-4 h-4 text-[#D4AF37]" />
+                  <input
+                    placeholder="Property type"
+                    className="w-full bg-transparent outline-none font-sans-custom text-[13px] font-light text-[#1A1A1A] placeholder:text-[#999999]"
+                  />
+                </div>
+                <button className="group flex items-center justify-center gap-2 px-6 py-4 bg-[#1A1A1A] text-white hover:bg-black transition-colors duration-300">
+                  <Search className="w-4 h-4" />
+                  <span className="font-sans-custom text-[12px] font-light tracking-wide-editorial uppercase">
+                    Search
+                  </span>
+                </button>
+              </div>
+            </div>
+          </AnimatedSection>
+        </div>
+      </div>
+    </section>
+  );
+}
 
 /* ──────────────────────────────────────────────
    Featured Properties Section
