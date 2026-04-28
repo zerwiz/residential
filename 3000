@@ -115,3 +115,5 @@ https://react.dev/link/hydration-mismatch
  GET /journal 200 in 29ms (next.js: 1872µs, application-code: 27ms)
  GET /contact 200 in 26ms (next.js: 2ms, application-code: 23ms)
  GET /journal 200 in 30ms (next.js: 1774µs, application-code: 28ms)
+ GET /properties 200 in 29ms (next.js: 1612µs, application-code: 27ms)
+ GET /journal 200 in 29ms (next.js: 1566µs, application-code: 28ms)
