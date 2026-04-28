@@ -39,10 +39,3 @@ functionsDirectory = ".netlify/functions"
 # Next.js build environment settings
 [build.environment]
   NPM_FLAGS = "--no-optional"
-
-# Configure @netlify/plugin-nextjs to properly handle build output
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
-  [plugins.inputs]
-    nextExcludeBaseDirectory = true
-    publishDir = ".next"
