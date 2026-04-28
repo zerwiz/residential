@@ -11526,3 +11526,1832 @@ Ecmascript file had an error
   501 | MemoPropertyCard.displayName = "PropertyCard";
   502 |
   503 | export function FeaturedProperties() {
+⨯ Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+    at ignore-listed frames {
+  digest: '3825398308'
+}
+⨯ Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+    at ignore-listed frames {
+  digest: '3825398308'
+}
+ GET / 500 in 407ms (next.js: 97ms, application-code: 310ms)
+[browser] Uncaught Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `Home`.
+    at Home (src/app/page.tsx:18:9)
+  16 |       <Navigation />
+  17 |       <main>
+> 18 |         <HeroSection />
+     |         ^
+  19 |         <SectionDivider />
+  20 |         <FeaturedProperties />
+  21 |         <EditorialStatement />
+⨯ Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+    at ignore-listed frames {
+  digest: '3825398308'
+}
+ GET /? 500 in 268ms (next.js: 5ms, application-code: 263ms)
+[browser] Uncaught Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `Home`.
+    at Home (src/app/page.tsx:18:9)
+  16 |       <Navigation />
+  17 |       <main>
+> 18 |         <HeroSection />
+     |         ^
+  19 |         <SectionDivider />
+  20 |         <FeaturedProperties />
+  21 |         <EditorialStatement />
+✓ Compiled in 150ms
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
+[browser] ./CodeP/Residential/src/app/_components/luxury-sections.tsx:88:15
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |               Inquire
+  87 |             </a>
+> 88 |             ))}
+     |               ^
+  89 |             <span className={isHomePage ? "text-white/70" : "text-char...
+  90 |             <a
+  91 |               href="/inquire"
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./CodeP/Residential/src/app/_components/luxury-sections.tsx
+    ./CodeP/Residential/src/app/page.tsx 
