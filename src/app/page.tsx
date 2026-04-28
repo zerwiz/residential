@@ -154,7 +154,7 @@ function HeroSection() {
   return (
     <section
       ref={heroRef}
-      className="relative w-full h-screen overflow-hidden bg-white"
+      className="relative w-full h-screen overflow-hidden bg-white pt-24"
     >
       {/* White border framing - Gallery effect */}
       <div className="absolute inset-0 z-10 pointer-events-none">
