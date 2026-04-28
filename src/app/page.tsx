@@ -1,28 +1,34 @@
-'use client'
+"use client";
 
-import { useState, useEffect, useRef, useCallback } from 'react'
-import { motion, useScroll, useTransform, useInView, AnimatePresence } from 'framer-motion'
-import { Search, MapPin, ArrowRight, ChevronDown, Menu, X } from 'lucide-react'
+import { useState, useEffect, useRef, useCallback } from "react";
+import {
+  motion,
+  useScroll,
+  useTransform,
+  useInView,
+  AnimatePresence,
+} from "framer-motion";
+import { Search, MapPin, ArrowRight, ChevronDown, Menu, X } from "lucide-react";
 
 /* ──────────────────────────────────────────────
    Navigation
    ────────────────────────────────────────────── */
 function Navigation() {
-  const [scrolled, setScrolled] = useState(false)
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 60)
-    window.addEventListener('scroll', handleScroll, { passive: true })
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+    const handleScroll = () => setScrolled(window.scrollY > 60);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const navLinks = [
-    { label: 'Properties', href: '#properties' },
-    { label: 'Journal', href: '#journal' },
-    { label: 'About', href: '#about' },
-    { label: 'Contact', href: '#contact' },
-  ]
+    { label: "Properties", href: "#properties" },
+    { label: "Journal", href: "#journal" },
+    { label: "About", href: "#about" },
+    { label: "Contact", href: "#contact" },
+  ];
 
   return (
     <motion.header
@@ -31,14 +37,17 @@ function Navigation() {
       transition={{ duration: 0.8, delay: 0.2 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ease-out ${
         scrolled
-          ? 'bg-white/95 backdrop-blur-sm border-b border-[#E5E5E5]/50'
-          : 'bg-transparent'
+          ? "bg-white/95 backdrop-blur-sm border-b border-[#E5E5E5]/50"
+          : "bg-transparent"
       }`}
     >
       <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
         <nav className="flex items-center justify-between h-20 md:h-24">
           {/* Logo Monogram */}
-          <a href="#" className="font-serif text-xl md:text-2xl font-semibold tracking-editorial text-[#1A1A1A]">
+          <a
+            href="#"
+            className="font-serif text-xl md:text-2xl font-semibold tracking-editorial text-[#1A1A1A]"
+          >
             MAISON
           </a>
 
@@ -69,7 +78,9 @@ function Navigation() {
             aria-label="Toggle menu"
           >
             <motion.span
-              animate={mobileMenuOpen ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }}
+              animate={
+                mobileMenuOpen ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }
+              }
               className="block w-6 h-[1px] bg-[#1A1A1A] transition-colors"
             />
             <motion.span
@@ -77,7 +88,9 @@ function Navigation() {
               className="block w-6 h-[1px] bg-[#1A1A1A] transition-colors"
             />
             <motion.span
-              animate={mobileMenuOpen ? { rotate: -45, y: -6 } : { rotate: 0, y: 0 }}
+              animate={
+                mobileMenuOpen ? { rotate: -45, y: -6 } : { rotate: 0, y: 0 }
+              }
               className="block w-6 h-[1px] bg-[#1A1A1A] transition-colors"
             />
           </button>
@@ -89,9 +102,9 @@ function Navigation() {
         {mobileMenuOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
+            animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.4, ease: 'easeInOut' }}
+            transition={{ duration: 0.4, ease: "easeInOut" }}
             className="md:hidden bg-white border-t border-[#E5E5E5]/30 overflow-hidden"
           >
             <div className="px-6 py-10 flex flex-col gap-6">
@@ -121,32 +134,38 @@ function Navigation() {
         )}
       </AnimatePresence>
     </motion.header>
-  )
+  );
 }
 
 /* ──────────────────────────────────────────────
    Hero Section
    ────────────────────────────────────────────── */
 function HeroSection() {
-  const heroRef = useRef<HTMLDivElement>(null)
+  const heroRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: heroRef,
-    offset: ['start start', 'end start'],
-  })
-  const imageY = useTransform(scrollYProgress, [0, 1], ['0%', '15%'])
-  const overlayOpacity = useTransform(scrollYProgress, [0, 0.5], [0, 0.3])
-  const contentOpacity = useTransform(scrollYProgress, [0, 0.4], [1, 0])
-  const contentY = useTransform(scrollYProgress, [0, 0.4], ['0px', '-40px'])
+    offset: ["start start", "end start"],
+  });
+  const imageY = useTransform(scrollYProgress, [0, 1], ["0%", "15%"]);
+  const overlayOpacity = useTransform(scrollYProgress, [0, 0.5], [0, 0.3]);
+  const contentOpacity = useTransform(scrollYProgress, [0, 0.4], [1, 0]);
+  const contentY = useTransform(scrollYProgress, [0, 0.4], ["0px", "-40px"]);
 
   return (
-    <section ref={heroRef} className="relative w-full h-screen overflow-hidden bg-white">
+    <section
+      ref={heroRef}
+      className="relative w-full h-screen overflow-hidden bg-white"
+    >
       {/* White border framing - Gallery effect */}
       <div className="absolute inset-0 z-10 pointer-events-none">
         <div className="w-full h-full border-x-[1px] border-[#1A1A1A]/10 max-w-[92%] mx-auto" />
       </div>
 
       {/* Parallax Image */}
-      <motion.div className="absolute inset-0 w-full h-[120%] -top-[10%]" style={{ y: imageY }}>
+      <motion.div
+        className="absolute inset-0 w-full h-[120%] -top-[10%]"
+        style={{ y: imageY }}
+      >
         <div className="relative w-full h-full max-w-[92%] mx-auto">
           <img
             src="/hero-property.jpg"
@@ -174,7 +193,7 @@ function HeroSection() {
           <motion.div
             initial={{ scaleX: 0 }}
             animate={{ scaleX: 1 }}
-            transition={{ duration: 1.2, delay: 0.8, ease: 'easeOut' }}
+            transition={{ duration: 1.2, delay: 0.8, ease: "easeOut" }}
             className="gold-line mb-6"
           />
 
@@ -251,33 +270,41 @@ function HeroSection() {
       >
         <motion.div
           animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
+          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
         >
           <ChevronDown className="w-5 h-5 text-[#1A1A1A]/40" />
         </motion.div>
       </motion.div>
     </section>
-  )
+  );
 }
 
 /* ──────────────────────────────────────────────
    Animated Section Wrapper
    ────────────────────────────────────────────── */
-function AnimatedSection({ children, className = '', delay = 0 }: { children: React.ReactNode; className?: string; delay?: number }) {
-  const ref = useRef<HTMLDivElement>(null)
-  const isInView = useInView(ref, { once: true, margin: '-80px' })
+function AnimatedSection({
+  children,
+  className = "",
+  delay = 0,
+}: {
+  children: React.ReactNode;
+  className?: string;
+  delay?: number;
+}) {
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
     <motion.div
       ref={ref}
       initial={{ opacity: 0, y: 40 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
-      transition={{ duration: 0.9, delay, ease: 'easeOut' }}
+      transition={{ duration: 0.9, delay, ease: "easeOut" }}
       className={className}
     >
       {children}
     </motion.div>
-  )
+  );
 }
 
 /* ──────────────────────────────────────────────
@@ -288,7 +315,7 @@ function SectionDivider() {
     <div className="flex items-center justify-center py-2">
       <div className="w-[1px] h-12 bg-gradient-to-b from-transparent via-[#D4AF37] to-transparent" />
     </div>
-  )
+  );
 }
 
 /* ──────────────────────────────────────────────
@@ -297,41 +324,47 @@ function SectionDivider() {
 const properties = [
   {
     id: 1,
-    title: 'The Glass Pavilion',
-    location: 'Malibu, California',
-    price: '$12,500,000',
+    title: "The Glass Pavilion",
+    location: "Malibu, California",
+    price: "$12,500,000",
     beds: 5,
     baths: 6,
-    sqft: '8,200',
-    image: '/property-1.jpg',
-    tag: 'Featured',
+    sqft: "8,200",
+    image: "/property-1.jpg",
+    tag: "Featured",
   },
   {
     id: 2,
-    title: 'Villa Serena',
-    location: 'Santorini, Greece',
-    price: '$9,800,000',
+    title: "Villa Serena",
+    location: "Santorini, Greece",
+    price: "$9,800,000",
     beds: 4,
     baths: 5,
-    sqft: '6,500',
-    image: '/property-2.jpg',
-    tag: 'New Listing',
+    sqft: "6,500",
+    image: "/property-2.jpg",
+    tag: "New Listing",
   },
   {
     id: 3,
-    title: 'Alpine Retreat',
-    location: 'Zermatt, Switzerland',
-    price: '$15,200,000',
+    title: "Alpine Retreat",
+    location: "Zermatt, Switzerland",
+    price: "$15,200,000",
     beds: 6,
     baths: 7,
-    sqft: '10,400',
-    image: '/property-3.jpg',
-    tag: 'Exclusive',
+    sqft: "10,400",
+    image: "/property-3.jpg",
+    tag: "Exclusive",
   },
-]
+];
 
-function PropertyCard({ property, index }: { property: typeof properties[0]; index: number }) {
-  const [isHovered, setIsHovered] = useState(false)
+function PropertyCard({
+  property,
+  index,
+}: {
+  property: (typeof properties)[0];
+  index: number;
+}) {
+  const [isHovered, setIsHovered] = useState(false);
 
   return (
     <AnimatedSection delay={index * 0.15} className="group">
@@ -347,7 +380,7 @@ function PropertyCard({ property, index }: { property: typeof properties[0]; ind
             alt={property.title}
             className="w-full h-full object-cover"
             animate={{ scale: isHovered ? 1.04 : 1 }}
-            transition={{ duration: 0.7, ease: 'easeOut' }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
           />
           {/* Hairline border */}
           <div className="absolute inset-0 border border-[#1A1A1A]/6 pointer-events-none" />
@@ -406,7 +439,7 @@ function PropertyCard({ property, index }: { property: typeof properties[0]; ind
         </div>
       </motion.div>
     </AnimatedSection>
-  )
+  );
 }
 
 function FeaturedProperties() {
@@ -442,7 +475,7 @@ function FeaturedProperties() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 /* ──────────────────────────────────────────────
@@ -483,16 +516,19 @@ function EditorialStatement() {
               </h2>
               <div className="space-y-6">
                 <p className="font-sans-custom text-[15px] font-light text-[#555555] leading-relaxed">
-                  Every residence in our collection has been selected not merely for its architectural merit,
-                  but for its capacity to transform the way you experience daily life. These are spaces
-                  that transcend the ordinary, where light, material, and landscape converge to create
-                  moments of profound beauty.
+                  Every residence in our collection has been selected not merely
+                  for its architectural merit, but for its capacity to transform
+                  the way you experience daily life. These are spaces that
+                  transcend the ordinary, where light, material, and landscape
+                  converge to create moments of profound beauty.
                 </p>
                 <p className="font-sans-custom text-[15px] font-light text-[#555555] leading-relaxed">
-                  We work intimately with visionary architects, discerning collectors, and the world&apos;s
-                  most talented designers to present a portfolio that represents the pinnacle of
-                  contemporary residential design. Each property tells a story of ambition, craftsmanship,
-                  and an unwavering commitment to excellence.
+                  We work intimately with visionary architects, discerning
+                  collectors, and the world&apos;s most talented designers to
+                  present a portfolio that represents the pinnacle of
+                  contemporary residential design. Each property tells a story
+                  of ambition, craftsmanship, and an unwavering commitment to
+                  excellence.
                 </p>
               </div>
               <div className="mt-10 flex items-center gap-6">
@@ -509,7 +545,7 @@ function EditorialStatement() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 /* ──────────────────────────────────────────────
@@ -517,11 +553,11 @@ function EditorialStatement() {
    ────────────────────────────────────────────── */
 function StatsSection() {
   const stats = [
-    { number: '340+', label: 'Exceptional Properties' },
-    { number: '42', label: 'Countries Worldwide' },
-    { number: '$18B', label: 'Portfolio Value' },
-    { number: '15', label: 'Years of Excellence' },
-  ]
+    { number: "340+", label: "Exceptional Properties" },
+    { number: "42", label: "Countries Worldwide" },
+    { number: "$18B", label: "Portfolio Value" },
+    { number: "15", label: "Years of Excellence" },
+  ];
 
   return (
     <section className="py-20 md:py-28">
@@ -529,7 +565,11 @@ function StatsSection() {
         <div className="border-t border-b border-[#E5E5E5]/60 py-16 md:py-20">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-8">
             {stats.map((stat, i) => (
-              <AnimatedSection key={stat.label} delay={i * 0.1} className="text-center">
+              <AnimatedSection
+                key={stat.label}
+                delay={i * 0.1}
+                className="text-center"
+              >
                 <p className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-[#1A1A1A] mb-2">
                   {stat.number}
                 </p>
@@ -542,7 +582,7 @@ function StatsSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 /* ──────────────────────────────────────────────
@@ -551,18 +591,20 @@ function StatsSection() {
 function JournalSection() {
   const articles = [
     {
-      title: 'The New Language of Luxury',
-      category: 'Design',
-      excerpt: 'How contemporary architects are redefining what it means to live beautifully.',
-      image: '/property-2.jpg',
+      title: "The New Language of Luxury",
+      category: "Design",
+      excerpt:
+        "How contemporary architects are redefining what it means to live beautifully.",
+      image: "/property-2.jpg",
     },
     {
-      title: 'Coastal Living, Redefined',
-      category: 'Lifestyle',
-      excerpt: 'The most sought-after waterfront residences that balance serenity with sophistication.',
-      image: '/property-3.jpg',
+      title: "Coastal Living, Redefined",
+      category: "Lifestyle",
+      excerpt:
+        "The most sought-after waterfront residences that balance serenity with sophistication.",
+      image: "/property-3.jpg",
     },
-  ]
+  ];
 
   return (
     <section id="journal" className="py-24 md:py-32 lg:py-40 bg-[#F8F8F6]">
@@ -613,7 +655,7 @@ function JournalSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 /* ──────────────────────────────────────────────
@@ -632,9 +674,9 @@ function CTASection() {
               BEGIN YOUR JOURNEY
             </h2>
             <p className="font-sans-custom text-[15px] font-light text-[#555555] leading-relaxed mb-10">
-              Whether you are seeking the perfect residence or wish to list an extraordinary property,
-              our team of specialists is here to guide you through every step of the process with
-              discretion and care.
+              Whether you are seeking the perfect residence or wish to list an
+              extraordinary property, our team of specialists is here to guide
+              you through every step of the process with discretion and care.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <button className="group flex items-center gap-3 px-10 py-3.5 bg-[#1A1A1A] text-white font-sans-custom text-[12px] font-light tracking-wide-editorial uppercase hover:bg-[#333333] transition-colors duration-500">
@@ -649,7 +691,7 @@ function CTASection() {
         </AnimatedSection>
       </div>
     </section>
-  )
+  );
 }
 
 /* ──────────────────────────────────────────────
@@ -662,7 +704,10 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="md:col-span-1">
-            <a href="#" className="font-serif text-xl font-semibold tracking-editorial text-[#1A1A1A]">
+            <a
+              href="#"
+              className="font-serif text-xl font-semibold tracking-editorial text-[#1A1A1A]"
+            >
               MAISON
             </a>
             <p className="font-sans-custom text-[13px] font-light text-[#555555] mt-4 leading-relaxed">
@@ -678,7 +723,12 @@ function Footer() {
               Properties
             </h4>
             <div className="flex flex-col gap-3">
-              {['Residential', 'Commercial', 'New Developments', 'Off-Market'].map((link) => (
+              {[
+                "Residential",
+                "Commercial",
+                "New Developments",
+                "Off-Market",
+              ].map((link) => (
                 <a
                   key={link}
                   href="#"
@@ -695,7 +745,7 @@ function Footer() {
               Company
             </h4>
             <div className="flex flex-col gap-3">
-              {['About', 'Journal', 'Careers', 'Press'].map((link) => (
+              {["About", "Journal", "Careers", "Press"].map((link) => (
                 <a
                   key={link}
                   href="#"
@@ -712,15 +762,17 @@ function Footer() {
               Connect
             </h4>
             <div className="flex flex-col gap-3">
-              {['Instagram', 'Pinterest', 'LinkedIn', 'Newsletter'].map((link) => (
-                <a
-                  key={link}
-                  href="#"
-                  className="font-sans-custom text-[13px] font-light text-[#555555] hover:text-[#1A1A1A] transition-colors duration-300"
-                >
-                  {link}
-                </a>
-              ))}
+              {["Instagram", "Pinterest", "LinkedIn", "Newsletter"].map(
+                (link) => (
+                  <a
+                    key={link}
+                    href="#"
+                    className="font-sans-custom text-[13px] font-light text-[#555555] hover:text-[#1A1A1A] transition-colors duration-300"
+                  >
+                    {link}
+                  </a>
+                ),
+              )}
             </div>
           </div>
         </div>
@@ -731,7 +783,7 @@ function Footer() {
             &copy; 2026 Maison. All rights reserved.
           </p>
           <div className="flex items-center gap-6 mt-4 md:mt-0">
-            {['Privacy', 'Terms', 'Cookies'].map((link) => (
+            {["Privacy", "Terms", "Cookies"].map((link) => (
               <a
                 key={link}
                 href="#"
@@ -744,7 +796,7 @@ function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
 
 /* ──────────────────────────────────────────────
@@ -765,5 +817,5 @@ export default function Home() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }
