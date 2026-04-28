@@ -11,9 +11,6 @@ yarn.lock
 *.test.*
 *.spec.*
 
-# Ignore Next.js build output for Netlify (re-generated on deploy)
-.next/
-
 # Environment files
 .env
 .env.local
