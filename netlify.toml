@@ -1,21 +1,19 @@
 # Netlify configuration for Next.js application
 
-# Build settings
 [build]
   command = "npm run build"
-  # Publish the .next directory (Next.js output)
   publish = ".next"
 
-# Remove functionsDirectory - not needed for standard Next.js
-# functionsDirectory = ".netlify/functions"
+# Netlify functions directory (for API routes if needed)
+functionsDirectory = ".netlify/functions"
 
-# SPA fallback - all requests redirect to index.html
+# SPA fallback for client-side routing
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
 
-# Security headers
+# Security headers for production deployments
 [[headers]]
   for = "/*"
   [headers.values]
@@ -28,12 +26,15 @@
   for = "/_next/image-*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
-    
+
 [[headers]]
   for = "/_next/static/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
-# Ensure .next is included in .npmignore
+# Next.js build environment settings
 [build.environment]
   NPM_FLAGS = "--no-optional"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
