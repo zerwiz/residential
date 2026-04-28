@@ -64760,3 +64760,5 @@ Parsing ecmascript source code failed
 [browser] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
  GET / 200 in 42ms (next.js: 2ms, application-code: 40ms)
 [browser] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+ GET / 200 in 40ms (next.js: 1675µs, application-code: 38ms)
+[browser] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly. (<anonymous>)
