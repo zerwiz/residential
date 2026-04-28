@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef } from "react";
 import {
   motion,
   useScroll,
@@ -41,12 +41,12 @@ function Navigation() {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
+      <div className="max-w-360 mx-auto px-6 md:px-12 lg:px-20">
         <nav className="flex items-center justify-between h-20 md:h-24">
           {/* Logo Monogram */}
           <a
             href="#"
-            className="font-serif text-xl md:text-2xl font-semibold tracking-editorial text-[#1A1A1A]"
+            className="font-serif text-xl md:text-2xl font-semibold tracking-editorial text-charcoal"
           >
             MAISON
           </a>
@@ -57,15 +57,15 @@ function Navigation() {
               <a
                 key={link.label}
                 href={link.href}
-                className="font-sans-custom text-[13px] font-light tracking-wide-editorial text-[#555555] hover:text-[#1A1A1A] transition-colors duration-500 uppercase"
+                className="font-sans-custom text-[13px] font-light tracking-wide-editorial text-medium-grey hover:text-charcoal transition-colors duration-500 uppercase"
               >
                 {link.label}
               </a>
             ))}
-            <span className="text-[#E5E5E5]">|</span>
+            <span className="text-border-subtle">|</span>
             <a
               href="#contact"
-              className="font-sans-custom text-[13px] font-light tracking-wide-editorial text-[#D4AF37] hover:text-[#C4A030] transition-colors duration-500 uppercase"
+              className="font-sans-custom text-[13px] font-light tracking-wide-editorial text-gold hover:text-[#C4A030] transition-colors duration-500 uppercase"
             >
               Inquire
             </a>
@@ -74,24 +74,24 @@ function Navigation() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden w-10 h-10 flex flex-col items-center justify-center gap-[5px]"
+            className="md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.25"
             aria-label="Toggle menu"
           >
             <motion.span
               animate={
                 mobileMenuOpen ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }
               }
-              className="block w-6 h-[1px] bg-[#1A1A1A] transition-colors"
+              className="block w-6 h-px bg-charcoal transition-colors"
             />
             <motion.span
               animate={mobileMenuOpen ? { opacity: 0 } : { opacity: 1 }}
-              className="block w-6 h-[1px] bg-[#1A1A1A] transition-colors"
+              className="block w-6 h-px bg-charcoal transition-colors"
             />
             <motion.span
               animate={
                 mobileMenuOpen ? { rotate: -45, y: -6 } : { rotate: 0, y: 0 }
               }
-              className="block w-6 h-[1px] bg-[#1A1A1A] transition-colors"
+              className="block w-6 h-px bg-charcoal transition-colors"
             />
           </button>
         </nav>
@@ -105,7 +105,7 @@ function Navigation() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
-            className="md:hidden bg-white border-t border-[#E5E5E5]/30 overflow-hidden"
+            className="md:hidden bg-white border-t border-border-subtle/30 overflow-hidden"
           >
             <div className="px-6 py-10 flex flex-col gap-6">
               {navLinks.map((link, i) => (
@@ -116,207 +116,19 @@ function Navigation() {
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: i * 0.08 }}
-                  className="font-sans-custom text-[15px] font-light tracking-wide-editorial text-[#555555] hover:text-[#1A1A1A] transition-colors uppercase"
+                  className="font-sans-custom text-[15px] font-light tracking-wide-editorial text-medium-grey hover:text-charcoal transition-colors uppercase"
                 >
                   {link.label}
                 </motion.a>
               ))}
               <div className="gold-line" />
-              <a
-                href="#contact"
-                onClick={() => setMobileMenuOpen(false)}
-                className="font-sans-custom text-[15px] font-light tracking-wide-editorial text-[#D4AF37] uppercase"
-              >
-                Inquire
-              </a>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </motion.header>
-  );
-}
-
-/* ──────────────────────────────────────────────
-   Hero Section
-   ────────────────────────────────────────────── */
-function HeroSection() {
-  const heroRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: heroRef,
-    offset: ["start start", "end start"],
-  });
-  const imageY = useTransform(scrollYProgress, [0, 1], ["0%", "15%"]);
-  const overlayOpacity = useTransform(scrollYProgress, [0, 0.5], [0, 0.3]);
-  const contentOpacity = useTransform(scrollYProgress, [0, 0.4], [1, 0]);
-  const contentY = useTransform(scrollYProgress, [0, 0.4], ["0px", "-40px"]);
-
-  return (
-    <section
-      ref={heroRef}
-      className="relative w-full h-screen overflow-hidden bg-white pt-24"
-    >
+              <div className="relative w-full h-screen overflow-hidden bg-white pt-24">
       {/* White border framing - Gallery effect */}
       <div className="absolute inset-0 z-10 pointer-events-none">
-        <div className="w-full h-full border-x-[1px] border-[#1A1A1A]/10 max-w-[92%] mx-auto" />
+        <div className="w-full h-full border-x border-charcoal/10 max-w-[92%] mx-auto" />
       </div>
 
       {/* Parallax Image */}
-      <motion.div
-        className="absolute inset-0 w-full h-[120%] -top-[10%]"
-        style={{ y: imageY }}
-      >
-        <div className="relative w-full h-full max-w-[92%] mx-auto">
-          <img
-            src="/hero-property.jpg"
-            alt="The Residence at Seaside Point — A modernist cliffside estate"
-            className="w-full h-full object-cover"
-          />
-          {/* Hairline border on image */}
-          <div className="absolute inset-0 border border-[#1A1A1A]/8" />
-        </div>
-      </motion.div>
-
-      {/* Dark overlay on scroll */}
-      <motion.div
-        className="absolute inset-0 bg-[#1A1A1A] z-10 pointer-events-none"
-        style={{ opacity: overlayOpacity }}
-      />
-
-      {/* Hero Content */}
-      <motion.div
-        className="absolute inset-0 z-20 flex flex-col items-center justify-end pb-24 md:pb-32"
-        style={{ opacity: contentOpacity, y: contentY }}
-      >
-        <div className="max-w-[92%] mx-auto w-full flex flex-col items-center text-center">
-          {/* Gold accent line */}
-          <motion.div
-            initial={{ scaleX: 0 }}
-            animate={{ scaleX: 1 }}
-            transition={{ duration: 1.2, delay: 0.8, ease: "easeOut" }}
-            className="gold-line mb-6"
-          />
-
-          {/* Subtitle */}
-          <motion.p
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.0 }}
-            className="font-sans-custom text-[11px] md:text-[12px] font-light tracking-wide-editorial text-[#D4AF37] uppercase mb-4"
-          >
-            Curated Property — Seaside Point
-          </motion.p>
-
-          {/* Main Title */}
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 1.2 }}
-            className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium tracking-editorial text-white leading-tight drop-shadow-[0_2px_20px_rgba(0,0,0,0.3)]"
-          >
-            THE RESIDENCE AT
-            <br />
-            SEASIDE POINT
-          </motion.h1>
-
-          {/* Location */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 1.6 }}
-            className="flex items-center gap-2 mt-4"
-          >
-            <MapPin className="w-3 h-3 text-white/70" />
-            <span className="font-sans-custom text-[12px] font-light text-white/70 tracking-wide">
-              Amalfi Coast, Italy
-            </span>
-          </motion.div>
-
-          {/* Floating Search Bar */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.8 }}
-            className="mt-10 w-full max-w-xl"
-          >
-            <div className="relative flex items-center bg-white/95 backdrop-blur-md rounded-full shadow-[0_4px_30px_rgba(0,0,0,0.08)] border border-white/50">
-              <div className="flex-1 flex items-center pl-6 pr-4 py-4">
-                <Search className="w-4 h-4 text-[#999999] mr-3 flex-shrink-0" />
-                <input
-                  type="text"
-                  placeholder="City, Neighborhood, or Address."
-                  className="w-full font-sans-custom text-[14px] font-light text-[#1A1A1A] placeholder-[#999999] bg-transparent outline-none"
-                />
-              </div>
-              <div className="flex items-center gap-3 pr-2">
-                <button className="hidden sm:inline-flex font-sans-custom text-[12px] font-light tracking-wide-editorial uppercase text-[#555555] hover:text-[#1A1A1A] transition-colors px-3 py-2">
-                  Browse
-                </button>
-                <button className="flex items-center justify-center w-10 h-10 rounded-full bg-[#1A1A1A] hover:bg-[#333333] transition-colors duration-300">
-                  <Search className="w-4 h-4 text-[#D4AF37]" />
-                </button>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      </motion.div>
-
-      {/* Scroll indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 2.5, duration: 1 }}
-        className="absolute bottom-6 left-1/2 -translate-x-1/2 z-30"
-      >
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-        >
-          <ChevronDown className="w-5 h-5 text-[#1A1A1A]/40" />
-        </motion.div>
-      </motion.div>
-    </section>
-  );
-}
-
-/* ──────────────────────────────────────────────
-   Animated Section Wrapper
-   ────────────────────────────────────────────── */
-function AnimatedSection({
-  children,
-  className = "",
-  delay = 0,
-}: {
-  children: React.ReactNode;
-  className?: string;
-  delay?: number;
-}) {
-  const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once: true, margin: "-80px" });
-
-  return (
-    <motion.div
-      ref={ref}
-      initial={{ opacity: 0, y: 40 }}
-      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
-      transition={{ duration: 0.9, delay, ease: "easeOut" }}
-      className={className}
-    >
-      {children}
-    </motion.div>
-  );
-}
-
-/* ──────────────────────────────────────────────
-   Section Divider
-   ────────────────────────────────────────────── */
-function SectionDivider() {
-  return (
-    <div className="flex items-center justify-center py-2">
-      <div className="w-[1px] h-12 bg-gradient-to-b from-transparent via-[#D4AF37] to-transparent" />
-    </div>
-  );
-}
 
 /* ──────────────────────────────────────────────
    Featured Properties Section

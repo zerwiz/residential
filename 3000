@@ -64763,3 +64763,157 @@ Parsing ecmascript source code failed
  GET / 200 in 40ms (next.js: 1675µs, application-code: 38ms)
 [browser] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly. (<anonymous>)
 ✓ Compiled in 161ms
+✓ Compiled in 143ms
+✓ Compiled in 219ms
+⨯ ./CodeP/Residential/src/app/page.tsx:126:5
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+  [90m124 |[0m               <div className=[32m"gold-line"[0m />
+  [90m125 |[0m       className=[32m"relative w-full h-screen overflow-hidden bg-white pt...[0m
+[31m[1m>[0m [90m126 |[0m     >
+  [90m    |[0m     [31m[1m^[0m
+  [90m127 |[0m       {[90m/* White border framing - Gallery effect */[0m}
+  [90m128 |[0m       <div className=[32m"absolute inset-0 z-10 pointer-events-none"[0m>
+  [90m129 |[0m         <div className=[32m"w-full h-full border-x border-charcoal/10 max...[0m
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./CodeP/Residential/src/app/page.tsx [Client Component Browser]
+    ./CodeP/Residential/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./CodeP/Residential/src/app/page.tsx [Client Component SSR]
+    ./CodeP/Residential/src/app/page.tsx [Server Component]
+
+
+⨯ ./CodeP/Residential/src/app/page.tsx:126:5
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+  [90m124 |[0m               <div className=[32m"gold-line"[0m />
+  [90m125 |[0m       className=[32m"relative w-full h-screen overflow-hidden bg-white pt...[0m
+[31m[1m>[0m [90m126 |[0m     >
+  [90m    |[0m     [31m[1m^[0m
+  [90m127 |[0m       {[90m/* White border framing - Gallery effect */[0m}
+  [90m128 |[0m       <div className=[32m"absolute inset-0 z-10 pointer-events-none"[0m>
+  [90m129 |[0m         <div className=[32m"w-full h-full border-x border-charcoal/10 max...[0m
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./CodeP/Residential/src/app/page.tsx [Client Component Browser]
+    ./CodeP/Residential/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./CodeP/Residential/src/app/page.tsx [Client Component SSR]
+    ./CodeP/Residential/src/app/page.tsx [Server Component]
+
+
+ GET / 500 in 114ms (next.js: 29ms, application-code: 85ms)
+ GET / 500 in 131ms (next.js: 78ms, application-code: 53ms)
+⨯ ./CodeP/Residential/src/app/page.tsx:126:5
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+  [90m124 |[0m               <div className=[32m"gold-line"[0m />
+  [90m125 |[0m       className=[32m"relative w-full h-screen overflow-hidden bg-white pt...[0m
+[31m[1m>[0m [90m126 |[0m     >
+  [90m    |[0m     [31m[1m^[0m
+  [90m127 |[0m       {[90m/* White border framing - Gallery effect */[0m}
+  [90m128 |[0m       <div className=[32m"absolute inset-0 z-10 pointer-events-none"[0m>
+  [90m129 |[0m         <div className=[32m"w-full h-full border-x border-charcoal/10 max...[0m
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./CodeP/Residential/src/app/page.tsx [Client Component Browser]
+    ./CodeP/Residential/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./CodeP/Residential/src/app/page.tsx [Client Component SSR]
+    ./CodeP/Residential/src/app/page.tsx [Server Component]
+
+
+ GET / 500 in 145ms (next.js: 119ms, application-code: 26ms)
+[browser] ./CodeP/Residential/src/app/page.tsx:126:5
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+  124 |               <div className="gold-line" />
+  125 |       className="relative w-full h-screen overflow-hidden bg-white pt...
+> 126 |     >
+      |     ^
+  127 |       {/* White border framing - Gallery effect */}
+  128 |       <div className="absolute inset-0 z-10 pointer-events-none">
+  129 |         <div className="w-full h-full border-x border-charcoal/10 max...
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./CodeP/Residential/src/app/page.tsx [Client Component Browser]
+    ./CodeP/Residential/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./CodeP/Residential/src/app/page.tsx [Client Component SSR]
+    ./CodeP/Residential/src/app/page.tsx [Server Component] 
+[browser] ./CodeP/Residential/src/app/page.tsx:126:5
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+  124 |               <div className="gold-line" />
+  125 |       className="relative w-full h-screen overflow-hidden bg-white pt...
+> 126 |     >
+      |     ^
+  127 |       {/* White border framing - Gallery effect */}
+  128 |       <div className="absolute inset-0 z-10 pointer-events-none">
+  129 |         <div className="w-full h-full border-x border-charcoal/10 max...
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./CodeP/Residential/src/app/page.tsx [Client Component Browser]
+    ./CodeP/Residential/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./CodeP/Residential/src/app/page.tsx [Client Component SSR]
+    ./CodeP/Residential/src/app/page.tsx [Server Component] 
+[browser] ./CodeP/Residential/src/app/page.tsx:126:5
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+  124 |               <div className="gold-line" />
+  125 |       className="relative w-full h-screen overflow-hidden bg-white pt...
+> 126 |     >
+      |     ^
+  127 |       {/* White border framing - Gallery effect */}
+  128 |       <div className="absolute inset-0 z-10 pointer-events-none">
+  129 |         <div className="w-full h-full border-x border-charcoal/10 max...
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./CodeP/Residential/src/app/page.tsx [Client Component Browser]
+    ./CodeP/Residential/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./CodeP/Residential/src/app/page.tsx [Client Component SSR]
+    ./CodeP/Residential/src/app/page.tsx [Server Component] 
+⨯ ./CodeP/Residential/src/app/page.tsx:126:5
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+  [90m124 |[0m               <div className=[32m"gold-line"[0m />
+  [90m125 |[0m       className=[32m"relative w-full h-screen overflow-hidden bg-white pt...[0m
+[31m[1m>[0m [90m126 |[0m     >
+  [90m    |[0m     [31m[1m^[0m
+  [90m127 |[0m       {[90m/* White border framing - Gallery effect */[0m}
+  [90m128 |[0m       <div className=[32m"absolute inset-0 z-10 pointer-events-none"[0m>
+  [90m129 |[0m         <div className=[32m"w-full h-full border-x border-charcoal/10 max...[0m
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./CodeP/Residential/src/app/page.tsx [Client Component Browser]
+    ./CodeP/Residential/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./CodeP/Residential/src/app/page.tsx [Client Component SSR]
+    ./CodeP/Residential/src/app/page.tsx [Server Component]
+
+
+ GET / 500 in 241ms (next.js: 221ms, application-code: 20ms)
