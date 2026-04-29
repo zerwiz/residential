@@ -92,16 +92,20 @@ export function Navigation() {
             aria-label="Toggle menu"
           >
             <motion.span
-              animate={mobileMenuOpen ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }}
-              className={`block w-6 h-px transition-colors ${burgerBarClass}`}
+              animate={
+                mobileMenuOpen ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }
+              }
+              className={`block w-6 h-0.5 rounded-sm transition-colors ${burgerBarClass}`}
             />
             <motion.span
               animate={mobileMenuOpen ? { opacity: 0 } : { opacity: 1 }}
-              className={`block w-6 h-px transition-colors ${burgerBarClass}`}
+              className={`block w-6 h-0.5 rounded-sm transition-colors ${burgerBarClass}`}
             />
             <motion.span
-              animate={mobileMenuOpen ? { rotate: -45, y: -6 } : { rotate: 0, y: 0 }}
-              className={`block w-6 h-px transition-colors ${burgerBarClass}`}
+              animate={
+                mobileMenuOpen ? { rotate: -45, y: -6 } : { rotate: 0, y: 0 }
+              }
+              className={`block w-6 h-0.5 rounded-sm transition-colors ${burgerBarClass}`}
             />
           </button>
         </nav>
@@ -127,7 +131,9 @@ export function Navigation() {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: i * 0.08 }}
                   className={`font-sans-custom text-[15px] font-light tracking-wide-editorial uppercase transition-colors duration-500 ${
-                    isHomePage ? "text-charcoal hover:text-[#C4A030]" : "text-charcoal hover:text-[#C4A030]"
+                    isHomePage
+                      ? "text-charcoal hover:text-[#C4A030]"
+                      : "text-charcoal hover:text-[#C4A030]"
                   }`}
                 >
                   {link.label}
@@ -163,8 +169,8 @@ export function InquireSection() {
                 A discreet conversation begins here.
               </h1>
               <p className="font-sans-custom text-[15px] font-light text-[#555555] leading-relaxed mt-8 max-w-md">
-                Share a few details and a specialist will respond with curated options,
-                timelines, and next steps.
+                Share a few details and a specialist will respond with curated
+                options, timelines, and next steps.
               </p>
 
               <div className="mt-10 space-y-3 text-[#555555]">
@@ -290,7 +296,12 @@ export function PageHero({
   return (
     <section className="relative overflow-hidden">
       <div className="absolute inset-0">
-        <img src={imageSrc} alt="" className="w-full h-full object-cover" decoding="async" />
+        <img
+          src={imageSrc}
+          alt=""
+          className="w-full h-full object-cover"
+          decoding="async"
+        />
       </div>
       <div className="absolute inset-0 bg-gradient-to-b from-black/45 via-black/20 to-white/95" />
 
@@ -330,7 +341,10 @@ export function HeroSection() {
 
   return (
     <section ref={sectionRef} className="relative min-h-[92vh] overflow-hidden">
-      <motion.div style={{ y: imageY, scale: imageScale }} className="absolute inset-0">
+      <motion.div
+        style={{ y: imageY, scale: imageScale }}
+        className="absolute inset-0"
+      >
         <img
           src="/property-2.jpg"
           alt="Curated residence"
@@ -349,10 +363,12 @@ export function HeroSection() {
               Exceptional Properties Worldwide
             </p>
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-medium tracking-editorial text-white leading-[1.05]">
-              A curated collection of residences where architecture meets artistry.
+              A curated collection of residences where architecture meets
+              artistry.
             </h1>
-            <p className="font-sans-custom text-[15px] md:text-[16px] font-light text-[#D4AF37] leading-relaxed mt-8 max-w-2xl">
-              Discover spaces shaped by light, material, and landscape — selected for the way they transform daily life.
+            <p className="font-sans-custom text-[15px] md:text-[16px] font-light text-white leading-relaxed mt-8 max-w-2xl drop-shadow-md">
+              Discover spaces shaped by light, material, and landscape —
+              selected for the way they transform daily life.
             </p>
           </AnimatedSection>
 
@@ -554,7 +570,11 @@ export function EditorialStatement() {
           <AnimatedSection>
             <div className="relative">
               <div className="aspect-[3/4] overflow-hidden bg-[#E5E5E5]">
-                <img src="/property-1.jpg" alt="Interior of The Glass Pavilion" className="w-full h-full object-cover" />
+                <img
+                  src="/property-1.jpg"
+                  alt="Interior of The Glass Pavilion"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="absolute inset-0 border border-[#1A1A1A]/6 pointer-events-none" />
               <div className="absolute -bottom-3 -right-3 w-full h-full border border-[#D4AF37]/30 -z-10" />
@@ -574,10 +594,19 @@ export function EditorialStatement() {
               </h2>
               <div className="space-y-6">
                 <p className="font-sans-custom text-[15px] font-light text-[#555555] leading-relaxed">
-                  Every residence in our collection has been selected not merely for its architectural merit, but for its capacity to transform the way you experience daily life. These are spaces that transcend the ordinary, where light, material, and landscape converge to create moments of profound beauty.
+                  Every residence in our collection has been selected not merely
+                  for its architectural merit, but for its capacity to transform
+                  the way you experience daily life. These are spaces that
+                  transcend the ordinary, where light, material, and landscape
+                  converge to create moments of profound beauty.
                 </p>
                 <p className="font-sans-custom text-[15px] font-light text-[#555555] leading-relaxed">
-                  We work intimately with visionary architects, discerning collectors, and the world&apos;s most talented designers to present a portfolio that represents the pinnacle of contemporary residential design. Each property tells a story of ambition, craftsmanship, and an unwavering commitment to excellence.
+                  We work intimately with visionary architects, discerning
+                  collectors, and the world&apos;s most talented designers to
+                  present a portfolio that represents the pinnacle of
+                  contemporary residential design. Each property tells a story
+                  of ambition, craftsmanship, and an unwavering commitment to
+                  excellence.
                 </p>
               </div>
               <div className="mt-10 flex items-center gap-6">
@@ -611,7 +640,11 @@ export function StatsSection() {
         <div className="border-t border-b border-[#E5E5E5]/60 py-16 md:py-20">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-8">
             {stats.map((stat, i) => (
-              <AnimatedSection key={stat.label} delay={i * 0.1} className="text-center">
+              <AnimatedSection
+                key={stat.label}
+                delay={i * 0.1}
+                className="text-center"
+              >
                 <motion.div
                   className="group inline-flex flex-col items-center"
                   whileHover={{ y: -3 }}
@@ -647,13 +680,15 @@ export function JournalSection() {
     {
       title: "The New Language of Luxury",
       category: "Design",
-      excerpt: "How contemporary architects are redefining what it means to live beautifully.",
+      excerpt:
+        "How contemporary architects are redefining what it means to live beautifully.",
       image: "/property-2.jpg",
     },
     {
       title: "Coastal Living, Redefined",
       category: "Lifestyle",
-      excerpt: "The most sought-after waterfront residences that balance serenity with sophistication.",
+      excerpt:
+        "The most sought-after waterfront residences that balance serenity with sophistication.",
       image: "/property-3.jpg",
     },
   ];
@@ -673,9 +708,17 @@ export function JournalSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           {articles.map((article, i) => (
             <AnimatedSection key={article.title} delay={i * 0.15}>
-              <motion.div whileHover={{ y: -4 }} transition={{ duration: 0.4 }} className="group cursor-pointer">
+              <motion.div
+                whileHover={{ y: -4 }}
+                transition={{ duration: 0.4 }}
+                className="group cursor-pointer"
+              >
                 <div className="relative overflow-hidden aspect-[16/10] bg-[#E5E5E5] mb-6">
-                  <img src={article.image} alt={article.title} className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700" />
+                  <img
+                    src={article.image}
+                    alt={article.title}
+                    className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700"
+                  />
                   <div className="absolute inset-0 border border-[#1A1A1A]/6 pointer-events-none" />
                 </div>
                 <span className="font-sans-custom text-[10px] font-light tracking-wide-editorial uppercase text-[#D4AF37]">
@@ -715,7 +758,9 @@ export function CTASection() {
               BEGIN YOUR JOURNEY
             </h2>
             <p className="font-sans-custom text-[15px] font-light text-[#555555] leading-relaxed mb-10">
-              Whether you are seeking the perfect residence or wish to list an extraordinary property, our team of specialists is here to guide you through every step of the process with discretion and care.
+              Whether you are seeking the perfect residence or wish to list an
+              extraordinary property, our team of specialists is here to guide
+              you through every step of the process with discretion and care.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <button className="group flex items-center gap-3 px-10 py-3.5 bg-[#1A1A1A] text-white font-sans-custom text-[12px] font-light tracking-wide-editorial uppercase hover:bg-[#333333] transition-colors duration-500">
@@ -739,7 +784,10 @@ export function Footer() {
       <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 py-16 md:py-20">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="md:col-span-1">
-            <a href="/" className="font-serif text-xl font-semibold tracking-editorial text-[#1A1A1A]">
+            <a
+              href="/"
+              className="font-serif text-xl font-semibold tracking-editorial text-[#1A1A1A]"
+            >
               MAISON
             </a>
             <p className="font-sans-custom text-[13px] font-light text-[#555555] mt-4 leading-relaxed">
@@ -754,7 +802,12 @@ export function Footer() {
               Properties
             </h4>
             <div className="flex flex-col gap-3">
-              {["Residential", "Commercial", "New Developments", "Off-Market"].map((link) => (
+              {[
+                "Residential",
+                "Commercial",
+                "New Developments",
+                "Off-Market",
+              ].map((link) => (
                 <a
                   key={link}
                   href="/properties"
@@ -788,15 +841,17 @@ export function Footer() {
               Connect
             </h4>
             <div className="flex flex-col gap-3">
-              {["Instagram", "Pinterest", "LinkedIn", "Newsletter"].map((link) => (
-                <a
-                  key={link}
-                  href="#"
-                  className="font-sans-custom text-[13px] font-light text-[#555555] hover:text-[#1A1A1A] transition-colors duration-300"
-                >
-                  {link}
-                </a>
-              ))}
+              {["Instagram", "Pinterest", "LinkedIn", "Newsletter"].map(
+                (link) => (
+                  <a
+                    key={link}
+                    href="#"
+                    className="font-sans-custom text-[13px] font-light text-[#555555] hover:text-[#1A1A1A] transition-colors duration-300"
+                  >
+                    {link}
+                  </a>
+                ),
+              )}
             </div>
           </div>
         </div>
